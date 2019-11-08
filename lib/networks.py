@@ -133,7 +133,8 @@ def wide_resnet(inputs, is_training, hps, name=None, update_batch_stats=False):
                 lambda: x + tf.random_normal(tf.shape(x)) * 0.15,
                 lambda: x,
             )
-        x = _conv("init_conv", x, 3, 3, 16, [1, 1, 1, 1])
+        # modification du filter in 
+        x = _conv("init_conv", x, 3, 1, 16, [1, 1, 1, 1])
 
         activate_before_residual = [True, False, False]
         res_func = _residual
