@@ -36,7 +36,7 @@ flags.DEFINE_integer(
     "n_labeled", -1, "Number of labeled examples, or -1 for entire dataset."
 )
 flags.DEFINE_integer(
-    "training_length", 500000, "number of steps to train for."
+    "training_length", 10000, "number of steps to train for."
 )
 flags.DEFINE_integer("batch_size", 100, "Size of the batch")
 flags.DEFINE_string(
