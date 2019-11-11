@@ -16,6 +16,10 @@ import scipy.io
 
 from lib import dataset_utils
 from lib import paths
+
+import tensorflow as tf
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
 #
 flags.DEFINE_string(
     "directory",

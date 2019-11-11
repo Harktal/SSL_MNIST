@@ -20,6 +20,9 @@ from lib import hparams
 from lib.ssl_framework import SSLFramework
 from lib import networks
 
+import tensorflow as tf
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
 
 # Flags for model training
 # Evalutation binary never needs to know secondary dataset name or

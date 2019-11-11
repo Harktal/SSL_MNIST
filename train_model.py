@@ -15,6 +15,8 @@ from lib import hparams
 from lib.ssl_framework import SSLFramework
 from lib import networks
 
+import tensorflow as tf
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 _PRINT_SPAN = 300
 _CHECK_TRIAL_EARLY_STOP = 100
