@@ -27,7 +27,7 @@ DATASET_SHAPE = {
     "svhn": (None, 32, 32, 3),
     "svhn_extra": (None, 32, 32, 3),
     "imagenet_32": (None, 32, 32, 3),
-    "mnist":(None, 32, 32, 1),
+    "mnist":(None, 28, 28, 1),
 }
 DATASET_DTYPE = {
     "cifar10": tf.float32,
