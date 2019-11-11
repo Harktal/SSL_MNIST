@@ -37,7 +37,7 @@ flags.DEFINE_integer(
     "shuffle_buffer_size", 1000, "Size of the shuffle buffer."
 )
 flags.DEFINE_integer(
-    "training_length", 500000, "number of steps to train for."
+    "training_length", 10000, "number of steps to train for."
 )
 flags.DEFINE_string(
     "consistency_model", "mean_teacher", "Which consistency model to use."
