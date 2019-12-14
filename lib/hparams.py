@@ -70,9 +70,8 @@ svhn_overrides = dict(gaussian_noise=False, vat_epsilon=1.0)
 
 #ajout
 mnist_overrides = dict(
-    horizontal_flip=True,
-    random_translation=False,
     gaussian_noise=False,
+    vat_epsilon=1.0,
 )
 
 dataset_overrides = dict(
